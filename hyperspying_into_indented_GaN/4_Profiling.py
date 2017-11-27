@@ -37,8 +37,8 @@ def generate_markers_from_peaks(peaks):
         for x in np.arange(0,x_size):
             for y in np.arange(0,y_size):
                 try:
-                    mx[x,y] = peaks.inav[x,y].data[k][1]
-                    my[x,y] = peaks.inav[x,y].data[k][0]
+                    mx[x,y] = peaks.inav[x,y].data[k,1]
+                    my[x,y] = peaks.inav[x,y].data[k,0]
                 except IndexError: #we have fewer than 'max_peak_count' peaks, so no marker
                     mx[x,y] = (np.nan)
                     my[x,y] = (np.nan)
