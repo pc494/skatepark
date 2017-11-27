@@ -29,22 +29,20 @@ def find_max_length_peaks(peaks):
 
 @profile
 def generate_markers_from_peaks(peaks):
-    markx,marky = [],[]
+    mark = []
     x_size,y_size = peaks.axes_manager.navigation_shape[0],peaks.axes_manager.navigation_shape[1]
     max_peak_count = find_max_length_peaks(peaks)
     for k in np.arange(0,max_peak_count):
-        mx,my = np.empty([x_size,y_size]),np.empty([x_size,y_size])
+        m = np.empty([x_size,y_size,2])
         for x in np.arange(0,x_size):
             for y in np.arange(0,y_size):
                 try:
-                    mx[x,y] = peaks.inav[x,y].data[k,1]
-                    my[x,y] = peaks.inav[x,y].data[k,0]
+                    m[x,y] = peaks.inav[x,y].data[k]   
                 except IndexError: #we have fewer than 'max_peak_count' peaks, so no marker
-                    mx[x,y] = (np.nan)
-                    my[x,y] = (np.nan)
-        markx.append(mx.T)
-        marky.append(my.T)
-    
-    return markx,marky 
+                    m[x,y,0] = np.nan
+                    m[x,y,1] = np.nan
+        mark.append(m.T)
+        
+    return mark
 
-markx,marky = generate_markers_from_peaks(peaks)
+mark = generate_markers_from_peaks(peaks)
