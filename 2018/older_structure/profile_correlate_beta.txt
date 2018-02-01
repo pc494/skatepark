@@ -1,0 +1,32 @@
+Timer unit: 1e-06 s
+
+Total time: 0.107585 s
+File: profile_correlate_beta.py
+Function: correlate_danger_1 at line 24
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    24                                           @profile
+    25                                           def correlate_danger_1(image, pattern,arg3):
+    26       500       1081.0      2.2      1.0      shape = image.shape
+    27       500       3631.0      7.3      3.4      half_shape = tuple(i // 2 for i in shape)
+    28       500      22370.0     44.7     20.8      mask = np.abs(pattern.coordinates[:,2]) < 1e-2
+    29       500      50856.0    101.7     47.3      pixel_coordinates = np.rint(pattern.calibrated_coordinates[:,:2]+half_shape).astype(int)
+    30       500       5515.0     11.0      5.1      image_intensities = image[pixel_coordinates[:, 0][mask], pixel_coordinates[:, 1][mask]]
+    31       500      17005.0     34.0     15.8      pattern_intensities = pattern.intensities[mask]
+    32       500       7127.0     14.3      6.6      return np.dot(image_intensities,pattern_intensities)/np.sqrt(np.dot(pattern_intensities,pattern_intensities))
+
+Total time: 0.098528 s
+File: profile_correlate_beta.py
+Function: correlate_danger_2 at line 34
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    34                                           @profile
+    35                                           def correlate_danger_2(image, pattern,half_shape):
+    36       500      21231.0     42.5     21.5      mask = np.abs(pattern.coordinates[:,2]) < 1e-2
+    37       500      15466.0     30.9     15.7      pattern_intensities = pattern.intensities[mask]
+    38       500      50187.0    100.4     50.9      pixel_coordinates = np.rint(pattern.calibrated_coordinates[:,:2]+half_shape).astype(int)
+    39       500       5238.0     10.5      5.3      image_intensities = image[pixel_coordinates[:, 0][mask], pixel_coordinates[:, 1][mask]]
+    40       500       6406.0     12.8      6.5      return np.dot(image_intensities,pattern_intensities)/np.sqrt(np.dot(pattern_intensities,pattern_intensities))
+
