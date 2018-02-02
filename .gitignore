@@ -6,3 +6,6 @@ files/
 archive/
 *Dump*
 *.lprof
+images/
+misc/
+2017/brute*
