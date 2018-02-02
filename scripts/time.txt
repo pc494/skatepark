@@ -1,0 +1,42 @@
+WARNING:hyperspy.api:The ipywidgets GUI elements are not available, probably because the hyperspy_gui_ipywidgets package is not installed.
+WARNING:hyperspy.api:The traitsui GUI elements are not available, probably because the hyperspy_gui_traitui package is not installed.
+/home/pc494/anaconda3/lib/python3.6/site-packages/pyxem-0.5-py3.6-linux-x86_64.egg/pyxem/diffraction_generator.py:165: UserWarning: This functionality is a work in progress 
+  warnings.warn("This functionality is a work in progress ")
+
+real	0m15.287s
+user	0m53.616s
+sys	0m36.476s
+WARNING:hyperspy.api:The ipywidgets GUI elements are not available, probably because the hyperspy_gui_ipywidgets package is not installed.
+WARNING:hyperspy.api:The traitsui GUI elements are not available, probably because the hyperspy_gui_traitui package is not installed.
+/home/pc494/anaconda3/lib/python3.6/site-packages/pyxem-0.5-py3.6-linux-x86_64.egg/pyxem/diffraction_generator.py:165: UserWarning: This functionality is a work in progress 
+  warnings.warn("This functionality is a work in progress ")
+
+real	0m10.260s
+user	0m30.644s
+sys	0m25.256s
+WARNING:hyperspy.api:The ipywidgets GUI elements are not available, probably because the hyperspy_gui_ipywidgets package is not installed.
+WARNING:hyperspy.api:The traitsui GUI elements are not available, probably because the hyperspy_gui_traitui package is not installed.
+/home/pc494/anaconda3/lib/python3.6/site-packages/pyxem-0.5-py3.6-linux-x86_64.egg/pyxem/diffraction_generator.py:165: UserWarning: This functionality is a work in progress 
+  warnings.warn("This functionality is a work in progress ")
+
+real	0m14.594s
+user	0m51.992s
+sys	0m32.700s
+WARNING:hyperspy.api:The ipywidgets GUI elements are not available, probably because the hyperspy_gui_ipywidgets package is not installed.
+WARNING:hyperspy.api:The traitsui GUI elements are not available, probably because the hyperspy_gui_traitui package is not installed.
+/home/pc494/anaconda3/lib/python3.6/site-packages/pyxem-0.5-py3.6-linux-x86_64.egg/pyxem/diffraction_generator.py:165: UserWarning: This functionality is a work in progress 
+  warnings.warn("This functionality is a work in progress ")
+
+real	0m13.353s
+user	0m40.176s
+sys	0m33.192s
+WARNING:hyperspy.api:The ipywidgets GUI elements are not available, probably because the hyperspy_gui_ipywidgets package is not installed.
+WARNING:hyperspy.api:The traitsui GUI elements are not available, probably because the hyperspy_gui_traitui package is not installed.
+/home/pc494/anaconda3/lib/python3.6/site-packages/pyxem-0.5-py3.6-linux-x86_64.egg/pyxem/diffraction_generator.py:165: UserWarning: This functionality is a work in progress 
+  warnings.warn("This functionality is a work in progress ")
+
+real	1m54.907s
+user	9m21.320s
+sys	4m51.328s
+WARNING:hyperspy.api:The ipywidgets GUI elements are not available, probably because the hyperspy_gui_ipywidgets package is not installed.
+WARNING:hyperspy.api:The traitsui GUI elements are not available, probably because the hyperspy_gui_traitui package is not installed.

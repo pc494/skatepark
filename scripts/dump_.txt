@@ -1,0 +1,1554 @@
+
+Simulation parameters:
+=====================
+
+Algorithm: PRISM
+interpolationFactorX = 4
+interpolationFactorY = 4
+filenameAtoms = PP_input.XYZ
+filenameOutput = PP_output.mrc
+realspacePixelSize[0] = 0.1
+realspacePixelSize[1] = 0.1
+potBound = 1
+numFP = 1
+sliceThickness = 2
+E0 = 80000
+alphaBeamMax = 0.008
+numThreads = 12
+batchSizeTargetCPU = 1
+batchSizeTargetGPU = 2
+probeStepX = 0.25
+probeStepY = 0.25
+cellDim[0] = 20
+cellDim[1] = 20
+cellDim[2] = 20
+tileX = 1
+tileY = 1
+tileZ = 1
+probeDefocus = 0
+C3 = 0
+C5 = 0
+probeSemiangle = 0.01
+detectorAngleStep = 0.001
+probeXtilt = 0
+probeYtilt = 0
+scanWindowXMin = 0.495
+scanWindowXMax = 0.515
+scanWindowYMin = 0.495
+scanWindowYMax = 0.515
+integrationAngleMin = 0
+integrationAngleMax = 0.001
+randomSeed = 0
+includeOccupancy = true
+includeThermalEffects = false
+alsoDoCPUWork = true
+save2DOutput = false
+save3DOutput = false
+save4DOutput = true
+Formatting
+Execution plan: PRISM
+extracted 48000 atoms from 48002 lines in PP_input.XYZ
+tiledCellDim[0]= 81.9
+f_x = 16
+f_y = 16
+tiledCellDim[1] = 110
+tiledCellDim[2] = 110
+(f_y * round((tiledCellDim[1]) / meta.realspacePixelSize[0] / f_y) = 1104
+_imageSize[0] = 1104
+_imageSize[1] = 1104
+ prism_pars.pixelSize[1] = 0.0996377
+ prism_pars.pixelSize[0] = 0.0996377
+
+Simulation parameters:
+=====================
+
+Algorithm: PRISM
+interpolationFactorX = 4
+interpolationFactorY = 4
+filenameAtoms = PP_input.XYZ
+filenameOutput = PP_output.mrc
+realspacePixelSize[0] = 0.1
+realspacePixelSize[1] = 0.1
+potBound = 1
+numFP = 1
+sliceThickness = 2
+E0 = 80000
+alphaBeamMax = 0.008
+numThreads = 12
+batchSizeTargetCPU = 1
+batchSizeTargetGPU = 2
+probeStepX = 0.25
+probeStepY = 0.25
+cellDim[0] = 81.9
+cellDim[1] = 110
+cellDim[2] = 110
+tileX = 1
+tileY = 1
+tileZ = 1
+probeDefocus = 0
+C3 = 0
+C5 = 0
+probeSemiangle = 0.01
+detectorAngleStep = 0.001
+probeXtilt = 0
+probeYtilt = 0
+scanWindowXMin = 0.495
+scanWindowXMax = 0.515
+scanWindowYMin = 0.495
+scanWindowYMax = 0.515
+integrationAngleMin = 0
+integrationAngleMax = 0.001
+randomSeed = 0
+includeOccupancy = true
+includeThermalEffects = false
+alsoDoCPUWork = true
+save2DOutput = false
+save3DOutput = false
+save4DOutput = true
+Entering PRISM01_calcPotential
+Launching thread #0 to compute projected potential slices
+Launching thread #1 to compute projected potential slices
+Launching thread #2 to compute projected potential slices
+Launching thread #3 to compute projected potential slices
+Launching thread #4 to compute projected potential slices
+Launching thread #5 to compute projected potential slices
+Launching thread #6 to compute projected potential slices
+Launching thread #7 to compute projected potential slices
+Launching thread #8 to compute projected potential slices
+Launching thread #9 to compute projected potential slices
+Launching thread #10 to compute projected potential slices
+Launching thread #11 to compute projected potential slices
+Waiting for threads...
+Entering PRISM02_calcSMatrix
+Computing compact S matrix
+Launching thread #0 to compute beams
+Launching thread #1 to compute beams
+Launching thread #2 to compute beams
+Launching thread #3 to compute beams
+Launching thread #4 to compute beams
+Launching thread #5 to compute beams
+Launching thread #6 to compute beams
+Launching thread #7 to compute beams
+Launching thread #8 to compute beams
+Launching thread #9 to compute beams
+Launching thread #10 to compute beams
+Launching thread #11 to compute beams
+Waiting for threads...
+Computing Plane Wave #0/89
+Computing Plane Wave #8/89
+Computing Plane Wave #16/89
+Computing Plane Wave #24/89
+Computing Plane Wave #32/89
+Computing Plane Wave #40/89
+Computing Plane Wave #48/89
+Computing Plane Wave #56/89
+Computing Plane Wave #64/89
+Computing Plane Wave #72/89
+Computing Plane Wave #80/89
+Computing Plane Wave #88/89
+Entering PRISM03_calcOutput
+Launching CPU worker thread #0 to compute partial PRISM result
+Launching CPU worker thread #1 to compute partial PRISM result
+Launching CPU worker thread #2 to compute partial PRISM result
+Launching CPU worker thread #3 to compute partial PRISM result
+Launching CPU worker thread #4 to compute partial PRISM result
+Computing Probe Position #0/81
+Launching CPU worker thread #5 to compute partial PRISM result
+Launching CPU worker thread #6 to compute partial PRISM result
+Launching CPU worker thread #7 to compute partial PRISM result
+Launching CPU worker thread #8 to compute partial PRISM result
+Launching CPU worker thread #9 to compute partial PRISM result
+Launching CPU worker thread #10 to compute partial PRISM result
+Launching CPU worker thread #11 to compute partial PRISM result
+Waiting for threads...
+Computing Probe Position #8/81
+Computing Probe Position #16/81
+Computing Probe Position #24/81
+Computing Probe Position #32/81
+Computing Probe Position #40/81
+Computing Probe Position #48/81
+Computing Probe Position #56/81
+Computing Probe Position #64/81
+Computing Probe Position #72/81
+Computing Probe Position #80/81
+PRISM Calculation complete.
+
+{'save4DOutput': True, 'save3DOutput': False, 'scanWindowXMin': 0.495, 'scanWindowXMax': 0.515, 'scanWindowYMin': 0.495, 'scanWindowYMax': 0.515, 'alphaBeamMax': 0.008, 'probeSemiangle': 0.01, 'tileX': 1, 'tileY': 1, 'realspacePixelSizeX': 0.1, 'realspacePixelSizeY': 0.1, 'filenameAtoms': 'PP_input.XYZ', 'filenameOutput': 'PP_output.mrc'}
+
+Simulation parameters:
+=====================
+
+Algorithm: PRISM
+interpolationFactorX = 4
+interpolationFactorY = 4
+filenameAtoms = PP_input.XYZ
+filenameOutput = PP_output.mrc
+realspacePixelSize[0] = 0.1
+realspacePixelSize[1] = 0.1
+potBound = 1
+numFP = 1
+sliceThickness = 2
+E0 = 80000
+alphaBeamMax = 0.008
+numThreads = 12
+batchSizeTargetCPU = 1
+batchSizeTargetGPU = 2
+probeStepX = 0.25
+probeStepY = 0.25
+cellDim[0] = 20
+cellDim[1] = 20
+cellDim[2] = 20
+tileX = 1
+tileY = 1
+tileZ = 1
+probeDefocus = 0
+C3 = 0
+C5 = 0
+probeSemiangle = 0.01
+detectorAngleStep = 0.001
+probeXtilt = 0
+probeYtilt = 0
+scanWindowXMin = 0.495
+scanWindowXMax = 0.515
+scanWindowYMin = 0.495
+scanWindowYMax = 0.515
+integrationAngleMin = 0
+integrationAngleMax = 0.001
+randomSeed = 0
+includeOccupancy = true
+includeThermalEffects = false
+alsoDoCPUWork = true
+save2DOutput = false
+save3DOutput = false
+save4DOutput = true
+Formatting
+Execution plan: PRISM
+extracted 96000 atoms from 96002 lines in PP_input.XYZ
+tiledCellDim[0]= 167
+f_x = 16
+f_y = 16
+tiledCellDim[1] = 110
+tiledCellDim[2] = 110
+(f_y * round((tiledCellDim[1]) / meta.realspacePixelSize[0] / f_y) = 1104
+_imageSize[0] = 1104
+_imageSize[1] = 1104
+ prism_pars.pixelSize[1] = 0.0996377
+ prism_pars.pixelSize[0] = 0.0996377
+
+Simulation parameters:
+=====================
+
+Algorithm: PRISM
+interpolationFactorX = 4
+interpolationFactorY = 4
+filenameAtoms = PP_input.XYZ
+filenameOutput = PP_output.mrc
+realspacePixelSize[0] = 0.1
+realspacePixelSize[1] = 0.1
+potBound = 1
+numFP = 1
+sliceThickness = 2
+E0 = 80000
+alphaBeamMax = 0.008
+numThreads = 12
+batchSizeTargetCPU = 1
+batchSizeTargetGPU = 2
+probeStepX = 0.25
+probeStepY = 0.25
+cellDim[0] = 167
+cellDim[1] = 110
+cellDim[2] = 110
+tileX = 1
+tileY = 1
+tileZ = 1
+probeDefocus = 0
+C3 = 0
+C5 = 0
+probeSemiangle = 0.01
+detectorAngleStep = 0.001
+probeXtilt = 0
+probeYtilt = 0
+scanWindowXMin = 0.495
+scanWindowXMax = 0.515
+scanWindowYMin = 0.495
+scanWindowYMax = 0.515
+integrationAngleMin = 0
+integrationAngleMax = 0.001
+randomSeed = 0
+includeOccupancy = true
+includeThermalEffects = false
+alsoDoCPUWork = true
+save2DOutput = false
+save3DOutput = false
+save4DOutput = true
+Entering PRISM01_calcPotential
+Launching thread #0 to compute projected potential slices
+Launching thread #1 to compute projected potential slices
+Launching thread #2 to compute projected potential slices
+Launching thread #3 to compute projected potential slices
+Launching thread #4 to compute projected potential slices
+Launching thread #5 to compute projected potential slices
+Launching thread #6 to compute projected potential slices
+Launching thread #7 to compute projected potential slices
+Launching thread #8 to compute projected potential slices
+Launching thread #9 to compute projected potential slices
+Launching thread #10 to compute projected potential slices
+Launching thread #11 to compute projected potential slices
+Waiting for threads...
+Entering PRISM02_calcSMatrix
+Computing compact S matrix
+Launching thread #0 to compute beams
+Launching thread #1 to compute beams
+Launching thread #2 to compute beams
+Launching thread #3 to compute beams
+Launching thread #4 to compute beams
+Launching thread #5 to compute beams
+Launching thread #6 to compute beams
+Launching thread #7 to compute beams
+Launching thread #8 to compute beams
+Launching thread #9 to compute beams
+Launching thread #10 to compute beams
+Launching thread #11 to compute beams
+Waiting for threads...
+Computing Plane Wave #0/89
+Computing Plane Wave #8/89
+Computing Plane Wave #16/89
+Computing Plane Wave #24/89
+Computing Plane Wave #32/89
+Computing Plane Wave #40/89
+Computing Plane Wave #48/89
+Computing Plane Wave #56/89
+Computing Plane Wave #64/89
+Computing Plane Wave #72/89
+Computing Plane Wave #80/89
+Computing Plane Wave #88/89
+Entering PRISM03_calcOutput
+Launching CPU worker thread #0 to compute partial PRISM result
+Launching CPU worker thread #1 to compute partial PRISM result
+Launching CPU worker thread #2 to compute partial PRISM result
+Launching CPU worker thread #3 to compute partial PRISM result
+Launching CPU worker thread #4 to compute partial PRISM result
+Launching CPU worker thread #5 to compute partial PRISM result
+Launching CPU worker thread #6 to compute partial PRISM result
+Launching CPU worker thread #7 to compute partial PRISM result
+Launching CPU worker thread #8 to compute partial PRISM result
+Launching CPU worker thread #9 to compute partial PRISM result
+Launching CPU worker thread #10 to compute partial PRISM result
+Launching CPU worker thread #11 to compute partial PRISM result
+Waiting for threads...
+Computing Probe Position #0/81
+Computing Probe Position #8/81
+Computing Probe Position #16/81
+Computing Probe Position #24/81
+Computing Probe Position #32/81
+Computing Probe Position #40/81
+Computing Probe Position #48/81
+Computing Probe Position #56/81
+Computing Probe Position #64/81
+Computing Probe Position #72/81
+Computing Probe Position #80/81
+PRISM Calculation complete.
+
+{'save4DOutput': True, 'save3DOutput': False, 'scanWindowXMin': 0.495, 'scanWindowXMax': 0.515, 'scanWindowYMin': 0.495, 'scanWindowYMax': 0.515, 'alphaBeamMax': 0.008, 'probeSemiangle': 0.01, 'tileX': 1, 'tileY': 1, 'realspacePixelSizeX': 0.1, 'realspacePixelSizeY': 0.1, 'filenameAtoms': 'PP_input.XYZ', 'filenameOutput': 'PP_output.mrc'}
+
+Simulation parameters:
+=====================
+
+Algorithm: PRISM
+interpolationFactorX = 4
+interpolationFactorY = 4
+filenameAtoms = PP_input.XYZ
+filenameOutput = PP_output.mrc
+realspacePixelSize[0] = 0.1
+realspacePixelSize[1] = 0.1
+potBound = 1
+numFP = 1
+sliceThickness = 2
+E0 = 80000
+alphaBeamMax = 0.008
+numThreads = 12
+batchSizeTargetCPU = 1
+batchSizeTargetGPU = 2
+probeStepX = 0.25
+probeStepY = 0.25
+cellDim[0] = 20
+cellDim[1] = 20
+cellDim[2] = 20
+tileX = 1
+tileY = 1
+tileZ = 1
+probeDefocus = 0
+C3 = 0
+C5 = 0
+probeSemiangle = 0.01
+detectorAngleStep = 0.001
+probeXtilt = 0
+probeYtilt = 0
+scanWindowXMin = 0.495
+scanWindowXMax = 0.515
+scanWindowYMin = 0.495
+scanWindowYMax = 0.515
+integrationAngleMin = 0
+integrationAngleMax = 0.001
+randomSeed = 0
+includeOccupancy = true
+includeThermalEffects = false
+alsoDoCPUWork = true
+save2DOutput = false
+save3DOutput = false
+save4DOutput = true
+Formatting
+Execution plan: PRISM
+extracted 12000 atoms from 12002 lines in PP_input.XYZ
+tiledCellDim[0]= 81.9
+f_x = 16
+f_y = 16
+tiledCellDim[1] = 53.7
+tiledCellDim[2] = 53.7
+(f_y * round((tiledCellDim[1]) / meta.realspacePixelSize[0] / f_y) = 544
+_imageSize[0] = 544
+_imageSize[1] = 544
+ prism_pars.pixelSize[1] = 0.0987132
+ prism_pars.pixelSize[0] = 0.0987132
+
+Simulation parameters:
+=====================
+
+Algorithm: PRISM
+interpolationFactorX = 4
+interpolationFactorY = 4
+filenameAtoms = PP_input.XYZ
+filenameOutput = PP_output.mrc
+realspacePixelSize[0] = 0.1
+realspacePixelSize[1] = 0.1
+potBound = 1
+numFP = 1
+sliceThickness = 2
+E0 = 80000
+alphaBeamMax = 0.008
+numThreads = 12
+batchSizeTargetCPU = 1
+batchSizeTargetGPU = 2
+probeStepX = 0.25
+probeStepY = 0.25
+cellDim[0] = 81.9
+cellDim[1] = 53.7
+cellDim[2] = 53.7
+tileX = 1
+tileY = 1
+tileZ = 1
+probeDefocus = 0
+C3 = 0
+C5 = 0
+probeSemiangle = 0.01
+detectorAngleStep = 0.001
+probeXtilt = 0
+probeYtilt = 0
+scanWindowXMin = 0.495
+scanWindowXMax = 0.515
+scanWindowYMin = 0.495
+scanWindowYMax = 0.515
+integrationAngleMin = 0
+integrationAngleMax = 0.001
+randomSeed = 0
+includeOccupancy = true
+includeThermalEffects = false
+alsoDoCPUWork = true
+save2DOutput = false
+save3DOutput = false
+save4DOutput = true
+Entering PRISM01_calcPotential
+Launching thread #0 to compute projected potential slices
+Launching thread #1 to compute projected potential slices
+Launching thread #2 to compute projected potential slices
+Launching thread #3 to compute projected potential slices
+Launching thread #4 to compute projected potential slices
+Launching thread #5 to compute projected potential slices
+Launching thread #6 to compute projected potential slices
+Launching thread #7 to compute projected potential slices
+Launching thread #8 to compute projected potential slices
+Launching thread #9 to compute projected potential slices
+Launching thread #10 to compute projected potential slices
+Launching thread #11 to compute projected potential slices
+Waiting for threads...
+Entering PRISM02_calcSMatrix
+Computing compact S matrix
+Launching thread #0 to compute beams
+Launching thread #1 to compute beams
+Launching thread #2 to compute beams
+Launching thread #3 to compute beams
+Launching thread #4 to compute beams
+Launching thread #5 to compute beams
+Launching thread #6 to compute beams
+Launching thread #7 to compute beams
+Launching thread #8 to compute beams
+Launching thread #9 to compute beams
+Launching thread #10 to compute beams
+Launching thread #11 to compute beams
+Waiting for threads...
+Computing Plane Wave #0/21
+Computing Plane Wave #2/21
+Computing Plane Wave #8/21
+Computing Plane Wave #4/21
+Computing Plane Wave #6/21
+Computing Plane Wave #10/21
+Computing Plane Wave #12/21
+Computing Plane Wave #14/21
+Computing Plane Wave #16/21
+Computing Plane Wave #18/21
+Computing Plane Wave #20/21
+Entering PRISM03_calcOutput
+Launching CPU worker thread #0 to compute partial PRISM result
+Launching CPU worker thread #1 to compute partial PRISM result
+Launching CPU worker thread #2 to compute partial PRISM result
+Launching CPU worker thread #3 to compute partial PRISM result
+Launching CPU worker thread #4 to compute partial PRISM result
+Launching CPU worker thread #5 to compute partial PRISM result
+Launching CPU worker thread #6 to compute partial PRISM result
+Launching CPU worker thread #7 to compute partial PRISM result
+Launching CPU worker thread #8 to compute partial PRISM result
+Launching CPU worker thread #9 to compute partial PRISM result
+Launching CPU worker thread #10 to compute partial PRISM result
+Launching CPU worker thread #11 to compute partial PRISM result
+Waiting for threads...
+Computing Probe Position #0/25
+Computing Probe Position #2/25
+Computing Probe Position #4/25
+Computing Probe Position #6/25
+Computing Probe Position #8/25
+Computing Probe Position #10/25
+Computing Probe Position #12/25
+Computing Probe Position #14/25
+Computing Probe Position #16/25
+Computing Probe Position #18/25
+Computing Probe Position #20/25
+Computing Probe Position #22/25
+Computing Probe Position #24/25
+PRISM Calculation complete.
+
+{'save4DOutput': True, 'save3DOutput': False, 'scanWindowXMin': 0.495, 'scanWindowXMax': 0.515, 'scanWindowYMin': 0.495, 'scanWindowYMax': 0.515, 'alphaBeamMax': 0.008, 'probeSemiangle': 0.01, 'tileX': 1, 'tileY': 1, 'realspacePixelSizeX': 0.1, 'realspacePixelSizeY': 0.1, 'filenameAtoms': 'PP_input.XYZ', 'filenameOutput': 'PP_output.mrc'}
+
+Simulation parameters:
+=====================
+
+Algorithm: PRISM
+interpolationFactorX = 4
+interpolationFactorY = 4
+filenameAtoms = PP_input.XYZ
+filenameOutput = PP_output.mrc
+realspacePixelSize[0] = 0.1
+realspacePixelSize[1] = 0.1
+potBound = 1
+numFP = 1
+sliceThickness = 2
+E0 = 80000
+alphaBeamMax = 0.008
+numThreads = 12
+batchSizeTargetCPU = 1
+batchSizeTargetGPU = 2
+probeStepX = 0.25
+probeStepY = 0.25
+cellDim[0] = 20
+cellDim[1] = 20
+cellDim[2] = 20
+tileX = 1
+tileY = 1
+tileZ = 1
+probeDefocus = 0
+C3 = 0
+C5 = 0
+probeSemiangle = 0.01
+detectorAngleStep = 0.001
+probeXtilt = 0
+probeYtilt = 0
+scanWindowXMin = 0.495
+scanWindowXMax = 0.515
+scanWindowYMin = 0.495
+scanWindowYMax = 0.515
+integrationAngleMin = 0
+integrationAngleMax = 0.001
+randomSeed = 0
+includeOccupancy = true
+includeThermalEffects = false
+alsoDoCPUWork = true
+save2DOutput = false
+save3DOutput = false
+save4DOutput = true
+Formatting
+Execution plan: PRISM
+extracted 24000 atoms from 24002 lines in PP_input.XYZ
+tiledCellDim[0]= 167
+f_x = 16
+f_y = 16
+tiledCellDim[1] = 53.7
+tiledCellDim[2] = 53.7
+(f_y * round((tiledCellDim[1]) / meta.realspacePixelSize[0] / f_y) = 544
+_imageSize[0] = 544
+_imageSize[1] = 544
+ prism_pars.pixelSize[1] = 0.0987132
+ prism_pars.pixelSize[0] = 0.0987132
+
+Simulation parameters:
+=====================
+
+Algorithm: PRISM
+interpolationFactorX = 4
+interpolationFactorY = 4
+filenameAtoms = PP_input.XYZ
+filenameOutput = PP_output.mrc
+realspacePixelSize[0] = 0.1
+realspacePixelSize[1] = 0.1
+potBound = 1
+numFP = 1
+sliceThickness = 2
+E0 = 80000
+alphaBeamMax = 0.008
+numThreads = 12
+batchSizeTargetCPU = 1
+batchSizeTargetGPU = 2
+probeStepX = 0.25
+probeStepY = 0.25
+cellDim[0] = 167
+cellDim[1] = 53.7
+cellDim[2] = 53.7
+tileX = 1
+tileY = 1
+tileZ = 1
+probeDefocus = 0
+C3 = 0
+C5 = 0
+probeSemiangle = 0.01
+detectorAngleStep = 0.001
+probeXtilt = 0
+probeYtilt = 0
+scanWindowXMin = 0.495
+scanWindowXMax = 0.515
+scanWindowYMin = 0.495
+scanWindowYMax = 0.515
+integrationAngleMin = 0
+integrationAngleMax = 0.001
+randomSeed = 0
+includeOccupancy = true
+includeThermalEffects = false
+alsoDoCPUWork = true
+save2DOutput = false
+save3DOutput = false
+save4DOutput = true
+Entering PRISM01_calcPotential
+Launching thread #0 to compute projected potential slices
+Launching thread #1 to compute projected potential slices
+Launching thread #2 to compute projected potential slices
+Launching thread #3 to compute projected potential slices
+Launching thread #4 to compute projected potential slices
+Launching thread #5 to compute projected potential slices
+Launching thread #6 to compute projected potential slices
+Launching thread #7 to compute projected potential slices
+Launching thread #8 to compute projected potential slices
+Launching thread #9 to compute projected potential slices
+Launching thread #10 to compute projected potential slices
+Launching thread #11 to compute projected potential slices
+Waiting for threads...
+Entering PRISM02_calcSMatrix
+Computing compact S matrix
+Launching thread #0 to compute beams
+Launching thread #1 to compute beams
+Launching thread #2 to compute beams
+Launching thread #3 to compute beams
+Launching thread #4 to compute beams
+Launching thread #5 to compute beams
+Launching thread #6 to compute beams
+Launching thread #7 to compute beams
+Launching thread #8 to compute beams
+Launching thread #9 to compute beams
+Launching thread #10 to compute beams
+Launching thread #11 to compute beams
+Waiting for threads...
+Computing Plane Wave #0/21
+Computing Plane Wave #4/21
+Computing Plane Wave #2/21
+Computing Plane Wave #10/21
+Computing Plane Wave #6/21
+Computing Plane Wave #8/21
+Computing Plane Wave #12/21
+Computing Plane Wave #14/21
+Computing Plane Wave #16/21
+Computing Plane Wave #18/21
+Computing Plane Wave #20/21
+Entering PRISM03_calcOutput
+Launching CPU worker thread #0 to compute partial PRISM result
+Launching CPU worker thread #1 to compute partial PRISM result
+Launching CPU worker thread #2 to compute partial PRISM result
+Launching CPU worker thread #3 to compute partial PRISM result
+Launching CPU worker thread #4 to compute partial PRISM result
+Launching CPU worker thread #5 to compute partial PRISM result
+Launching CPU worker thread #6 to compute partial PRISM result
+Launching CPU worker thread #7 to compute partial PRISM result
+Launching CPU worker thread #8 to compute partial PRISM result
+Launching CPU worker thread #9 to compute partial PRISM result
+Launching CPU worker thread #10 to compute partial PRISM result
+Launching CPU worker thread #11 to compute partial PRISM result
+Waiting for threads...
+Computing Probe Position #0/25
+Computing Probe Position #2/25
+Computing Probe Position #4/25
+Computing Probe Position #6/25
+Computing Probe Position #8/25
+Computing Probe Position #10/25
+Computing Probe Position #12/25
+Computing Probe Position #14/25
+Computing Probe Position #16/25
+Computing Probe Position #18/25
+Computing Probe Position #20/25
+Computing Probe Position #22/25
+Computing Probe Position #24/25
+PRISM Calculation complete.
+
+{'save4DOutput': True, 'save3DOutput': False, 'scanWindowXMin': 0.495, 'scanWindowXMax': 0.515, 'scanWindowYMin': 0.495, 'scanWindowYMax': 0.515, 'alphaBeamMax': 0.008, 'probeSemiangle': 0.01, 'tileX': 1, 'tileY': 1, 'realspacePixelSizeX': 0.1, 'realspacePixelSizeY': 0.1, 'filenameAtoms': 'PP_input.XYZ', 'filenameOutput': 'PP_output.mrc'}
+
+Simulation parameters:
+=====================
+
+Algorithm: PRISM
+interpolationFactorX = 4
+interpolationFactorY = 4
+filenameAtoms = PP_input.XYZ
+filenameOutput = PP_output.mrc
+realspacePixelSize[0] = 0.1
+realspacePixelSize[1] = 0.1
+potBound = 1
+numFP = 1
+sliceThickness = 2
+E0 = 80000
+alphaBeamMax = 0.008
+numThreads = 12
+batchSizeTargetCPU = 1
+batchSizeTargetGPU = 2
+probeStepX = 0.25
+probeStepY = 0.25
+cellDim[0] = 20
+cellDim[1] = 20
+cellDim[2] = 20
+tileX = 1
+tileY = 1
+tileZ = 1
+probeDefocus = 0
+C3 = 0
+C5 = 0
+probeSemiangle = 0.01
+detectorAngleStep = 0.001
+probeXtilt = 0
+probeYtilt = 0
+scanWindowXMin = 0.495
+scanWindowXMax = 0.515
+scanWindowYMin = 0.495
+scanWindowYMax = 0.515
+integrationAngleMin = 0
+integrationAngleMax = 0.001
+randomSeed = 0
+includeOccupancy = true
+includeThermalEffects = false
+alsoDoCPUWork = true
+save2DOutput = false
+save3DOutput = false
+save4DOutput = true
+Formatting
+Execution plan: PRISM
+extracted 12000 atoms from 12002 lines in PP_input.XYZ
+tiledCellDim[0]= 81.9
+f_x = 16
+f_y = 16
+tiledCellDim[1] = 53.7
+tiledCellDim[2] = 53.7
+(f_y * round((tiledCellDim[1]) / meta.realspacePixelSize[0] / f_y) = 544
+_imageSize[0] = 544
+_imageSize[1] = 544
+ prism_pars.pixelSize[1] = 0.0987132
+ prism_pars.pixelSize[0] = 0.0987132
+
+Simulation parameters:
+=====================
+
+Algorithm: PRISM
+interpolationFactorX = 4
+interpolationFactorY = 4
+filenameAtoms = PP_input.XYZ
+filenameOutput = PP_output.mrc
+realspacePixelSize[0] = 0.1
+realspacePixelSize[1] = 0.1
+potBound = 1
+numFP = 1
+sliceThickness = 2
+E0 = 80000
+alphaBeamMax = 0.008
+numThreads = 12
+batchSizeTargetCPU = 1
+batchSizeTargetGPU = 2
+probeStepX = 0.25
+probeStepY = 0.25
+cellDim[0] = 81.9
+cellDim[1] = 53.7
+cellDim[2] = 53.7
+tileX = 1
+tileY = 1
+tileZ = 1
+probeDefocus = 0
+C3 = 0
+C5 = 0
+probeSemiangle = 0.01
+detectorAngleStep = 0.001
+probeXtilt = 0
+probeYtilt = 0
+scanWindowXMin = 0.495
+scanWindowXMax = 0.515
+scanWindowYMin = 0.495
+scanWindowYMax = 0.515
+integrationAngleMin = 0
+integrationAngleMax = 0.001
+randomSeed = 0
+includeOccupancy = true
+includeThermalEffects = false
+alsoDoCPUWork = true
+save2DOutput = false
+save3DOutput = false
+save4DOutput = true
+Entering PRISM01_calcPotential
+Launching thread #0 to compute projected potential slices
+Launching thread #1 to compute projected potential slices
+Launching thread #2 to compute projected potential slices
+Launching thread #3 to compute projected potential slices
+Launching thread #4 to compute projected potential slices
+Launching thread #5 to compute projected potential slices
+Launching thread #6 to compute projected potential slices
+Launching thread #7 to compute projected potential slices
+Launching thread #8 to compute projected potential slices
+Launching thread #9 to compute projected potential slices
+Launching thread #10 to compute projected potential slices
+Launching thread #11 to compute projected potential slices
+Waiting for threads...
+Entering PRISM02_calcSMatrix
+Computing compact S matrix
+Launching thread #0 to compute beams
+Launching thread #1 to compute beams
+Launching thread #2 to compute beams
+Launching thread #3 to compute beams
+Launching thread #4 to compute beams
+Launching thread #5 to compute beams
+Launching thread #6 to compute beams
+Launching thread #7 to compute beams
+Launching thread #8 to compute beams
+Launching thread #9 to compute beams
+Launching thread #10 to compute beams
+Launching thread #11 to compute beams
+Waiting for threads...
+Computing Plane Wave #0/21
+Computing Plane Wave #2/21
+Computing Plane Wave #4/21
+Computing Plane Wave #6/21
+Computing Plane Wave #10/21
+Computing Plane Wave #8/21
+Computing Plane Wave #12/21
+Computing Plane Wave #14/21
+Computing Plane Wave #16/21
+Computing Plane Wave #18/21
+Computing Plane Wave #20/21
+Entering PRISM03_calcOutput
+Launching CPU worker thread #0 to compute partial PRISM result
+Launching CPU worker thread #1 to compute partial PRISM result
+Launching CPU worker thread #2 to compute partial PRISM result
+Launching CPU worker thread #3 to compute partial PRISM result
+Launching CPU worker thread #4 to compute partial PRISM result
+Launching CPU worker thread #5 to compute partial PRISM result
+Launching CPU worker thread #6 to compute partial PRISM result
+Launching CPU worker thread #7 to compute partial PRISM result
+Launching CPU worker thread #8 to compute partial PRISM result
+Launching CPU worker thread #9 to compute partial PRISM result
+Launching CPU worker thread #10 to compute partial PRISM result
+Launching CPU worker thread #11 to compute partial PRISM result
+Waiting for threads...
+Computing Probe Position #0/25
+Computing Probe Position #2/25
+Computing Probe Position #4/25
+Computing Probe Position #6/25
+Computing Probe Position #8/25
+Computing Probe Position #10/25
+Computing Probe Position #12/25
+Computing Probe Position #14/25
+Computing Probe Position #16/25
+Computing Probe Position #18/25
+Computing Probe Position #20/25
+Computing Probe Position #22/25
+Computing Probe Position #24/25
+PRISM Calculation complete.
+
+{'save4DOutput': True, 'save3DOutput': False, 'scanWindowXMin': 0.495, 'scanWindowXMax': 0.515, 'scanWindowYMin': 0.495, 'scanWindowYMax': 0.515, 'alphaBeamMax': 0.008, 'probeSemiangle': 0.01, 'tileX': 1, 'tileY': 1, 'realspacePixelSizeX': 0.1, 'realspacePixelSizeY': 0.1, 'filenameAtoms': 'PP_input.XYZ', 'filenameOutput': 'PP_output.mrc'}
+
+Simulation parameters:
+=====================
+
+Algorithm: PRISM
+interpolationFactorX = 4
+interpolationFactorY = 4
+filenameAtoms = PP_input.XYZ
+filenameOutput = PP_output.mrc
+realspacePixelSize[0] = 0.1
+realspacePixelSize[1] = 0.1
+potBound = 1
+numFP = 1
+sliceThickness = 2
+E0 = 80000
+alphaBeamMax = 0.008
+numThreads = 12
+batchSizeTargetCPU = 1
+batchSizeTargetGPU = 2
+probeStepX = 0.25
+probeStepY = 0.25
+cellDim[0] = 20
+cellDim[1] = 20
+cellDim[2] = 20
+tileX = 1
+tileY = 1
+tileZ = 1
+probeDefocus = 0
+C3 = 0
+C5 = 0
+probeSemiangle = 0.01
+detectorAngleStep = 0.001
+probeXtilt = 0
+probeYtilt = 0
+scanWindowXMin = 0.495
+scanWindowXMax = 0.515
+scanWindowYMin = 0.495
+scanWindowYMax = 0.515
+integrationAngleMin = 0
+integrationAngleMax = 0.001
+randomSeed = 0
+includeOccupancy = true
+includeThermalEffects = false
+alsoDoCPUWork = true
+save2DOutput = false
+save3DOutput = false
+save4DOutput = true
+Formatting
+Execution plan: PRISM
+extracted 24000 atoms from 24002 lines in PP_input.XYZ
+tiledCellDim[0]= 167
+f_x = 16
+f_y = 16
+tiledCellDim[1] = 53.7
+tiledCellDim[2] = 53.7
+(f_y * round((tiledCellDim[1]) / meta.realspacePixelSize[0] / f_y) = 544
+_imageSize[0] = 544
+_imageSize[1] = 544
+ prism_pars.pixelSize[1] = 0.0987132
+ prism_pars.pixelSize[0] = 0.0987132
+
+Simulation parameters:
+=====================
+
+Algorithm: PRISM
+interpolationFactorX = 4
+interpolationFactorY = 4
+filenameAtoms = PP_input.XYZ
+filenameOutput = PP_output.mrc
+realspacePixelSize[0] = 0.1
+realspacePixelSize[1] = 0.1
+potBound = 1
+numFP = 1
+sliceThickness = 2
+E0 = 80000
+alphaBeamMax = 0.008
+numThreads = 12
+batchSizeTargetCPU = 1
+batchSizeTargetGPU = 2
+probeStepX = 0.25
+probeStepY = 0.25
+cellDim[0] = 167
+cellDim[1] = 53.7
+cellDim[2] = 53.7
+tileX = 1
+tileY = 1
+tileZ = 1
+probeDefocus = 0
+C3 = 0
+C5 = 0
+probeSemiangle = 0.01
+detectorAngleStep = 0.001
+probeXtilt = 0
+probeYtilt = 0
+scanWindowXMin = 0.495
+scanWindowXMax = 0.515
+scanWindowYMin = 0.495
+scanWindowYMax = 0.515
+integrationAngleMin = 0
+integrationAngleMax = 0.001
+randomSeed = 0
+includeOccupancy = true
+includeThermalEffects = false
+alsoDoCPUWork = true
+save2DOutput = false
+save3DOutput = false
+save4DOutput = true
+Entering PRISM01_calcPotential
+Launching thread #0 to compute projected potential slices
+Launching thread #1 to compute projected potential slices
+Launching thread #2 to compute projected potential slices
+Launching thread #3 to compute projected potential slices
+Launching thread #4 to compute projected potential slices
+Launching thread #5 to compute projected potential slices
+Launching thread #6 to compute projected potential slices
+Launching thread #7 to compute projected potential slices
+Launching thread #8 to compute projected potential slices
+Launching thread #9 to compute projected potential slices
+Launching thread #10 to compute projected potential slices
+Launching thread #11 to compute projected potential slices
+Waiting for threads...
+Entering PRISM02_calcSMatrix
+Computing compact S matrix
+Launching thread #0 to compute beams
+Launching thread #1 to compute beams
+Launching thread #2 to compute beams
+Launching thread #3 to compute beams
+Launching thread #4 to compute beams
+Launching thread #5 to compute beams
+Launching thread #6 to compute beams
+Launching thread #7 to compute beams
+Launching thread #8 to compute beams
+Launching thread #9 to compute beams
+Launching thread #10 to compute beams
+Launching thread #11 to compute beams
+Waiting for threads...
+Computing Plane Wave #0/21
+Computing Plane Wave #2/21
+Computing Plane Wave #4/21
+Computing Plane Wave #6/21
+Computing Plane Wave #8/21
+Computing Plane Wave #10/21
+Computing Plane Wave #12/21
+Computing Plane Wave #14/21
+Computing Plane Wave #16/21
+Computing Plane Wave #18/21
+Computing Plane Wave #20/21
+Entering PRISM03_calcOutput
+Launching CPU worker thread #0 to compute partial PRISM result
+Launching CPU worker thread #1 to compute partial PRISM result
+Launching CPU worker thread #2 to compute partial PRISM result
+Launching CPU worker thread #3 to compute partial PRISM result
+Launching CPU worker thread #4 to compute partial PRISM result
+Launching CPU worker thread #5 to compute partial PRISM result
+Launching CPU worker thread #6 to compute partial PRISM result
+Launching CPU worker thread #7 to compute partial PRISM result
+Launching CPU worker thread #8 to compute partial PRISM result
+Launching CPU worker thread #9 to compute partial PRISM result
+Launching CPU worker thread #10 to compute partial PRISM result
+Launching CPU worker thread #11 to compute partial PRISM result
+Waiting for threads...
+Computing Probe Position #0/25
+Computing Probe Position #2/25
+Computing Probe Position #4/25
+Computing Probe Position #6/25
+Computing Probe Position #8/25
+Computing Probe Position #10/25
+Computing Probe Position #12/25
+Computing Probe Position #14/25
+Computing Probe Position #16/25
+Computing Probe Position #18/25
+Computing Probe Position #20/25
+Computing Probe Position #22/25
+Computing Probe Position #24/25
+PRISM Calculation complete.
+
+{'save4DOutput': True, 'save3DOutput': False, 'scanWindowXMin': 0.495, 'scanWindowXMax': 0.515, 'scanWindowYMin': 0.495, 'scanWindowYMax': 0.515, 'alphaBeamMax': 0.008, 'probeSemiangle': 0.01, 'tileX': 1, 'tileY': 1, 'realspacePixelSizeX': 0.1, 'realspacePixelSizeY': 0.1, 'filenameAtoms': 'PP_input.XYZ', 'filenameOutput': 'PP_output.mrc'}
+
+Simulation parameters:
+=====================
+
+Algorithm: PRISM
+interpolationFactorX = 4
+interpolationFactorY = 4
+filenameAtoms = PP_input.XYZ
+filenameOutput = PP_output.mrc
+realspacePixelSize[0] = 0.1
+realspacePixelSize[1] = 0.1
+potBound = 1
+numFP = 1
+sliceThickness = 2
+E0 = 80000
+alphaBeamMax = 0.008
+numThreads = 12
+batchSizeTargetCPU = 1
+batchSizeTargetGPU = 2
+probeStepX = 0.25
+probeStepY = 0.25
+cellDim[0] = 20
+cellDim[1] = 20
+cellDim[2] = 20
+tileX = 1
+tileY = 1
+tileZ = 1
+probeDefocus = 0
+C3 = 0
+C5 = 0
+probeSemiangle = 0.01
+detectorAngleStep = 0.001
+probeXtilt = 0
+probeYtilt = 0
+scanWindowXMin = 0.495
+scanWindowXMax = 0.515
+scanWindowYMin = 0.495
+scanWindowYMax = 0.515
+integrationAngleMin = 0
+integrationAngleMax = 0.001
+randomSeed = 0
+includeOccupancy = true
+includeThermalEffects = false
+alsoDoCPUWork = true
+save2DOutput = false
+save3DOutput = false
+save4DOutput = true
+Formatting
+Execution plan: PRISM
+extracted 16000 atoms from 16002 lines in PP_input.XYZ
+tiledCellDim[0]= 110
+f_x = 16
+f_y = 16
+tiledCellDim[1] = 53.7
+tiledCellDim[2] = 53.7
+(f_y * round((tiledCellDim[1]) / meta.realspacePixelSize[0] / f_y) = 544
+_imageSize[0] = 544
+_imageSize[1] = 544
+ prism_pars.pixelSize[1] = 0.0987132
+ prism_pars.pixelSize[0] = 0.0987132
+
+Simulation parameters:
+=====================
+
+Algorithm: PRISM
+interpolationFactorX = 4
+interpolationFactorY = 4
+filenameAtoms = PP_input.XYZ
+filenameOutput = PP_output.mrc
+realspacePixelSize[0] = 0.1
+realspacePixelSize[1] = 0.1
+potBound = 1
+numFP = 1
+sliceThickness = 2
+E0 = 80000
+alphaBeamMax = 0.008
+numThreads = 12
+batchSizeTargetCPU = 1
+batchSizeTargetGPU = 2
+probeStepX = 0.25
+probeStepY = 0.25
+cellDim[0] = 110
+cellDim[1] = 53.7
+cellDim[2] = 53.7
+tileX = 1
+tileY = 1
+tileZ = 1
+probeDefocus = 0
+C3 = 0
+C5 = 0
+probeSemiangle = 0.01
+detectorAngleStep = 0.001
+probeXtilt = 0
+probeYtilt = 0
+scanWindowXMin = 0.495
+scanWindowXMax = 0.515
+scanWindowYMin = 0.495
+scanWindowYMax = 0.515
+integrationAngleMin = 0
+integrationAngleMax = 0.001
+randomSeed = 0
+includeOccupancy = true
+includeThermalEffects = false
+alsoDoCPUWork = true
+save2DOutput = false
+save3DOutput = false
+save4DOutput = true
+Entering PRISM01_calcPotential
+Launching thread #0 to compute projected potential slices
+Launching thread #1 to compute projected potential slices
+Launching thread #2 to compute projected potential slices
+Launching thread #3 to compute projected potential slices
+Launching thread #4 to compute projected potential slices
+Launching thread #5 to compute projected potential slices
+Launching thread #6 to compute projected potential slices
+Launching thread #7 to compute projected potential slices
+Launching thread #8 to compute projected potential slices
+Launching thread #9 to compute projected potential slices
+Launching thread #10 to compute projected potential slices
+Launching thread #11 to compute projected potential slices
+Waiting for threads...
+Entering PRISM02_calcSMatrix
+Computing compact S matrix
+Launching thread #0 to compute beams
+Launching thread #1 to compute beams
+Launching thread #2 to compute beams
+Launching thread #3 to compute beams
+Launching thread #4 to compute beams
+Launching thread #5 to compute beams
+Launching thread #6 to compute beams
+Launching thread #7 to compute beams
+Launching thread #8 to compute beams
+Launching thread #9 to compute beams
+Launching thread #10 to compute beams
+Launching thread #11 to compute beams
+Waiting for threads...
+Computing Plane Wave #0/21
+Computing Plane Wave #4/21
+Computing Plane Wave #6/21
+Computing Plane Wave #2/21
+Computing Plane Wave #8/21
+Computing Plane Wave #10/21
+Computing Plane Wave #12/21
+Computing Plane Wave #14/21
+Computing Plane Wave #16/21
+Computing Plane Wave #18/21
+Computing Plane Wave #20/21
+Entering PRISM03_calcOutput
+Launching CPU worker thread #0 to compute partial PRISM result
+Launching CPU worker thread #1 to compute partial PRISM result
+Launching CPU worker thread #2 to compute partial PRISM result
+Launching CPU worker thread #3 to compute partial PRISM result
+Launching CPU worker thread #4 to compute partial PRISM result
+Launching CPU worker thread #5 to compute partial PRISM result
+Launching CPU worker thread #6 to compute partial PRISM result
+Launching CPU worker thread #7 to compute partial PRISM result
+Launching CPU worker thread #8 to compute partial PRISM result
+Launching CPU worker thread #9 to compute partial PRISM result
+Launching CPU worker thread #10 to compute partial PRISM result
+Launching CPU worker thread #11 to compute partial PRISM result
+Waiting for threads...
+Computing Probe Position #0/25
+Computing Probe Position #2/25
+Computing Probe Position #4/25
+Computing Probe Position #6/25
+Computing Probe Position #8/25
+Computing Probe Position #10/25
+Computing Probe Position #12/25
+Computing Probe Position #14/25
+Computing Probe Position #16/25
+Computing Probe Position #18/25
+Computing Probe Position #20/25
+Computing Probe Position #22/25
+Computing Probe Position #24/25
+PRISM Calculation complete.
+
+{'save4DOutput': True, 'save3DOutput': False, 'scanWindowXMin': 0.495, 'scanWindowXMax': 0.515, 'scanWindowYMin': 0.495, 'scanWindowYMax': 0.515, 'alphaBeamMax': 0.008, 'probeSemiangle': 0.01, 'tileX': 1, 'tileY': 1, 'realspacePixelSizeX': 0.1, 'realspacePixelSizeY': 0.1, 'filenameAtoms': 'PP_input.XYZ', 'filenameOutput': 'PP_output.mrc'}
+
+Simulation parameters:
+=====================
+
+Algorithm: PRISM
+interpolationFactorX = 4
+interpolationFactorY = 4
+filenameAtoms = PP_input.XYZ
+filenameOutput = PP_output.mrc
+realspacePixelSize[0] = 0.1
+realspacePixelSize[1] = 0.1
+potBound = 1
+numFP = 1
+sliceThickness = 2
+E0 = 80000
+alphaBeamMax = 0.008
+numThreads = 12
+batchSizeTargetCPU = 1
+batchSizeTargetGPU = 2
+probeStepX = 0.25
+probeStepY = 0.25
+cellDim[0] = 20
+cellDim[1] = 20
+cellDim[2] = 20
+tileX = 1
+tileY = 1
+tileZ = 1
+probeDefocus = 0
+C3 = 0
+C5 = 0
+probeSemiangle = 0.01
+detectorAngleStep = 0.001
+probeXtilt = 0
+probeYtilt = 0
+scanWindowXMin = 0.495
+scanWindowXMax = 0.515
+scanWindowYMin = 0.495
+scanWindowYMax = 0.515
+integrationAngleMin = 0
+integrationAngleMax = 0.001
+randomSeed = 0
+includeOccupancy = true
+includeThermalEffects = false
+alsoDoCPUWork = true
+save2DOutput = false
+save3DOutput = false
+save4DOutput = true
+Formatting
+Execution plan: PRISM
+extracted 64000 atoms from 64002 lines in PP_input.XYZ
+tiledCellDim[0]= 110
+f_x = 16
+f_y = 16
+tiledCellDim[1] = 110
+tiledCellDim[2] = 110
+(f_y * round((tiledCellDim[1]) / meta.realspacePixelSize[0] / f_y) = 1104
+_imageSize[0] = 1104
+_imageSize[1] = 1104
+ prism_pars.pixelSize[1] = 0.0996377
+ prism_pars.pixelSize[0] = 0.0996377
+
+Simulation parameters:
+=====================
+
+Algorithm: PRISM
+interpolationFactorX = 4
+interpolationFactorY = 4
+filenameAtoms = PP_input.XYZ
+filenameOutput = PP_output.mrc
+realspacePixelSize[0] = 0.1
+realspacePixelSize[1] = 0.1
+potBound = 1
+numFP = 1
+sliceThickness = 2
+E0 = 80000
+alphaBeamMax = 0.008
+numThreads = 12
+batchSizeTargetCPU = 1
+batchSizeTargetGPU = 2
+probeStepX = 0.25
+probeStepY = 0.25
+cellDim[0] = 110
+cellDim[1] = 110
+cellDim[2] = 110
+tileX = 1
+tileY = 1
+tileZ = 1
+probeDefocus = 0
+C3 = 0
+C5 = 0
+probeSemiangle = 0.01
+detectorAngleStep = 0.001
+probeXtilt = 0
+probeYtilt = 0
+scanWindowXMin = 0.495
+scanWindowXMax = 0.515
+scanWindowYMin = 0.495
+scanWindowYMax = 0.515
+integrationAngleMin = 0
+integrationAngleMax = 0.001
+randomSeed = 0
+includeOccupancy = true
+includeThermalEffects = false
+alsoDoCPUWork = true
+save2DOutput = false
+save3DOutput = false
+save4DOutput = true
+Entering PRISM01_calcPotential
+Launching thread #0 to compute projected potential slices
+Launching thread #1 to compute projected potential slices
+Launching thread #2 to compute projected potential slices
+Launching thread #3 to compute projected potential slices
+Launching thread #4 to compute projected potential slices
+Launching thread #5 to compute projected potential slices
+Launching thread #6 to compute projected potential slices
+Launching thread #7 to compute projected potential slices
+Launching thread #8 to compute projected potential slices
+Launching thread #9 to compute projected potential slices
+Launching thread #10 to compute projected potential slices
+Launching thread #11 to compute projected potential slices
+Waiting for threads...
+Entering PRISM02_calcSMatrix
+Computing compact S matrix
+Launching thread #0 to compute beams
+Launching thread #1 to compute beams
+Launching thread #2 to compute beams
+Launching thread #3 to compute beams
+Launching thread #4 to compute beams
+Launching thread #5 to compute beams
+Launching thread #6 to compute beams
+Launching thread #7 to compute beams
+Launching thread #8 to compute beams
+Launching thread #9 to compute beams
+Launching thread #10 to compute beams
+Launching thread #11 to compute beams
+Waiting for threads...
+Computing Plane Wave #0/89
+Computing Plane Wave #8/89
+Computing Plane Wave #16/89
+Computing Plane Wave #24/89
+Computing Plane Wave #32/89
+Computing Plane Wave #40/89
+Computing Plane Wave #48/89
+Computing Plane Wave #56/89
+Computing Plane Wave #64/89
+Computing Plane Wave #72/89
+Computing Plane Wave #80/89
+Computing Plane Wave #88/89
+Entering PRISM03_calcOutput
+Launching CPU worker thread #0 to compute partial PRISM result
+Launching CPU worker thread #1 to compute partial PRISM result
+Launching CPU worker thread #2 to compute partial PRISM result
+Launching CPU worker thread #3 to compute partial PRISM result
+Launching CPU worker thread #4 to compute partial PRISM result
+Launching CPU worker thread #5 to compute partial PRISM result
+Launching CPU worker thread #6 to compute partial PRISM result
+Launching CPU worker thread #7 to compute partial PRISM result
+Launching CPU worker thread #8 to compute partial PRISM result
+Launching CPU worker thread #9 to compute partial PRISM result
+Launching CPU worker thread #10 to compute partial PRISM result
+Launching CPU worker thread #11 to compute partial PRISM result
+Waiting for threads...
+Computing Probe Position #0/81
+Computing Probe Position #8/81
+Computing Probe Position #16/81
+Computing Probe Position #24/81
+Computing Probe Position #32/81
+Computing Probe Position #40/81
+Computing Probe Position #48/81
+Computing Probe Position #56/81
+Computing Probe Position #64/81
+Computing Probe Position #72/81
+Computing Probe Position #80/81
+PRISM Calculation complete.
+
+{'save4DOutput': True, 'save3DOutput': False, 'scanWindowXMin': 0.495, 'scanWindowXMax': 0.515, 'scanWindowYMin': 0.495, 'scanWindowYMax': 0.515, 'alphaBeamMax': 0.008, 'probeSemiangle': 0.01, 'tileX': 1, 'tileY': 1, 'realspacePixelSizeX': 0.1, 'realspacePixelSizeY': 0.1, 'filenameAtoms': 'PP_input.XYZ', 'filenameOutput': 'PP_output.mrc'}
+
+Simulation parameters:
+=====================
+
+Algorithm: PRISM
+interpolationFactorX = 4
+interpolationFactorY = 4
+filenameAtoms = PP_input.XYZ
+filenameOutput = PP_output.mrc
+realspacePixelSize[0] = 0.1
+realspacePixelSize[1] = 0.1
+potBound = 1
+numFP = 1
+sliceThickness = 2
+E0 = 80000
+alphaBeamMax = 0.008
+numThreads = 12
+batchSizeTargetCPU = 1
+batchSizeTargetGPU = 2
+probeStepX = 0.25
+probeStepY = 0.25
+cellDim[0] = 20
+cellDim[1] = 20
+cellDim[2] = 20
+tileX = 1
+tileY = 1
+tileZ = 1
+probeDefocus = 0
+C3 = 0
+C5 = 0
+probeSemiangle = 0.01
+detectorAngleStep = 0.001
+probeXtilt = 0
+probeYtilt = 0
+scanWindowXMin = 0.495
+scanWindowXMax = 0.515
+scanWindowYMin = 0.495
+scanWindowYMax = 0.515
+integrationAngleMin = 0
+integrationAngleMax = 0.001
+randomSeed = 0
+includeOccupancy = true
+includeThermalEffects = false
+alsoDoCPUWork = true
+save2DOutput = false
+save3DOutput = false
+save4DOutput = true
+Formatting
+Execution plan: PRISM
+extracted 256000 atoms from 256002 lines in PP_input.XYZ
+tiledCellDim[0]= 110
+f_x = 16
+f_y = 16
+tiledCellDim[1] = 223
+tiledCellDim[2] = 223
+(f_y * round((tiledCellDim[1]) / meta.realspacePixelSize[0] / f_y) = 2224
+_imageSize[0] = 2224
+_imageSize[1] = 2224
+ prism_pars.pixelSize[1] = 0.10027
+ prism_pars.pixelSize[0] = 0.10027
+
+Simulation parameters:
+=====================
+
+Algorithm: PRISM
+interpolationFactorX = 4
+interpolationFactorY = 4
+filenameAtoms = PP_input.XYZ
+filenameOutput = PP_output.mrc
+realspacePixelSize[0] = 0.1
+realspacePixelSize[1] = 0.1
+potBound = 1
+numFP = 1
+sliceThickness = 2
+E0 = 80000
+alphaBeamMax = 0.008
+numThreads = 12
+batchSizeTargetCPU = 1
+batchSizeTargetGPU = 2
+probeStepX = 0.25
+probeStepY = 0.25
+cellDim[0] = 110
+cellDim[1] = 223
+cellDim[2] = 223
+tileX = 1
+tileY = 1
+tileZ = 1
+probeDefocus = 0
+C3 = 0
+C5 = 0
+probeSemiangle = 0.01
+detectorAngleStep = 0.001
+probeXtilt = 0
+probeYtilt = 0
+scanWindowXMin = 0.495
+scanWindowXMax = 0.515
+scanWindowYMin = 0.495
+scanWindowYMax = 0.515
+integrationAngleMin = 0
+integrationAngleMax = 0.001
+randomSeed = 0
+includeOccupancy = true
+includeThermalEffects = false
+alsoDoCPUWork = true
+save2DOutput = false
+save3DOutput = false
+save4DOutput = true
+Entering PRISM01_calcPotential
+Launching thread #0 to compute projected potential slices
+Launching thread #1 to compute projected potential slices
+Launching thread #2 to compute projected potential slices
+Launching thread #3 to compute projected potential slices
+Launching thread #4 to compute projected potential slices
+Launching thread #5 to compute projected potential slices
+Launching thread #6 to compute projected potential slices
+Launching thread #7 to compute projected potential slices
+Launching thread #8 to compute projected potential slices
+Launching thread #9 to compute projected potential slices
+Launching thread #10 to compute projected potential slices
+Launching thread #11 to compute projected potential slices
+Waiting for threads...
+Entering PRISM02_calcSMatrix
+Computing compact S matrix
+Launching thread #0 to compute beams
+Launching thread #1 to compute beams
+Launching thread #2 to compute beams
+Launching thread #3 to compute beams
+Launching thread #4 to compute beams
+Launching thread #5 to compute beams
+Launching thread #6 to compute beams
+Launching thread #7 to compute beams
+Launching thread #8 to compute beams
+Launching thread #9 to compute beams
+Launching thread #10 to compute beams
+Launching thread #11 to compute beams
+Waiting for threads...
+Computing Plane Wave #0/357
+Computing Plane Wave #35/357
+Computing Plane Wave #70/357
+Computing Plane Wave #100/357
+Computing Plane Wave #105/357
