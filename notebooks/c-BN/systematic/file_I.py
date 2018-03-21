@@ -6,11 +6,10 @@ from pyxem.utils.plot import generate_marker_inputs_from_peaks
 from pyxem.utils.sim_utils import peaks_from_best_template
 import hyperspy.api as hs
 
-if False:
-    dp = pxm.ElectronDiffraction(pxm.load('binned.hspy'))
-    if False:
-        sample = pxm.load('/home/pc494/Documents/data/cBN/160401_MultipleZoneAxes/160401_03.blo')
-        #old big one
+if True:
+    dp = pxm.ElectronDiffraction(pxm.load('data/binned_01.hspy'))
+    dp.plot()
+    raise KeyboardInterrupt
 
 theoretical_distance = 1/np.sqrt((3.615**2)/(8))
 dp = dp.inav[50:80,100:130]

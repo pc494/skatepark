@@ -19,8 +19,10 @@ def build_linear_grid_in_euler(alpha_min,alpha_max,beta_min,beta_max,gamma_min,g
     from itertools import product
     return list(product(a,b,c))
 
-def get_WZL_axis(library,phase,angle):
+def get_WZL_axis(angle):
+    phase = "A"
     indicies = library[phase][angle]['Sim'].indices
+    print(indicies)
     for U in [0,1,2,3,-3,-2,-1]:
         for V in [0,1,2,3,-3,-2,-1]:
             for W in [1,2,3,-3,-2,-1]:
@@ -29,6 +31,11 @@ def get_WZL_axis(library,phase,angle):
                     return direction
     print("No direction found")
     return 0
+
+def angle_between_direction(l1,l2):
+    t = np.dot(l1,l2)
+    b = np.sqrt(np.dot(l1,l1)*np.dot(l2,l2))
+    return np.arccos(t/b)*180/(np.pi)
 
 
 theoretical_distance = 1/np.sqrt((3.615**2)/(8))
@@ -40,45 +47,45 @@ structure = pmg.Structure.from_spacegroup("F-43m",lattice, [B,N], [[0, 0, 0],[0.
 
 if True:
     dp = pxm.ElectronDiffraction(pxm.load('data/binned02.hspy'))
-    #dp.plot()
-    #raise KeyboardInterrupt
+    if False:
+        dp.plot()
+        raise KeyboardInterrupt
     ## get an undeformed section
 
-    dp = pxm.ElectronDiffraction(dp.inav[0:4,104:108])
-
-    """
-    ## get a deformed section
-    dp = pxm.ElectronDiffraction(sample.inav[110:150,25:65])
-    dp = pxm.ElectronDiffraction(sample.inav[116:143,19:46])
-    """
-
+    dp = pxm.ElectronDiffraction(dp.inav[3:5,139:141])
+    
     #CORRECTING FOR CAMERA
     dp.apply_affine_transformation(np.array([[0.99,0,0],
                                              [0,0.69,0],
                                              [0,0,1]]))
     #CORRECTING FOR BEING OFF CENTER
-    #cents = dp.get_direct_beam_position(method='blur',sigma=10,progress_bar=False) #checking centers, also BUG!
+    cents = dp.get_direct_beam_position(method='blur',sigma=3,progress_bar=False) #checking centers, also BUG!
     dp.apply_affine_transformation(D=np.array([[1,0,0],
-                                               [0,1,0.75],
+                                               [0,1,2],
                                                [0,0,1]]))
+    cents2 = dp.get_direct_beam_position(method='blur',sigma=3,progress_bar=False)
 
+#raise KeyboardInterrupt
 pixel_distance = 79.6/4 # np.sqrt(50**2 + 61.7**2)
 dp.set_calibration(theoretical_distance/pixel_distance)
-#dp.set_calibration(theoretical_distance/pixel_distance)
 ## Calibrate then do the main component
+
+with open('c-BN-5deg.pickle', 'rb') as handle:
+    library = pickle.load(handle)
 
 if True:
     
     half_side_length = (512/8)
     edc = pxm.DiffractionGenerator(300, 5e-2)
     diff_gen = pxm.DiffractionLibraryGenerator(edc)
-    rot_list = build_linear_grid_in_euler(25,35,125,135,30,40,1)
+    a,b,c = 5,20,35
+    rot_list = build_linear_grid_in_euler(a-5,a+5,b-5,b+5,c-5,c+5,1)
     struc_lib = build_structure_lib(structure,rot_list)
 
 
     library = diff_gen.get_diffraction_library(struc_lib,
                                            calibration=theoretical_distance/pixel_distance,
-                                           reciprocal_radius=1,
+                                           reciprocal_radius=1.5,
                                            half_shape=(half_side_length,half_side_length),
                                            representation='euler',
                                            with_direct_beam=False)
@@ -86,9 +93,7 @@ if True:
     with open('c-BN-1deg_x.pickle', 'wb') as handle:
         pickle.dump(library, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-if False:
-    with open('c-BN-5deg.pickle', 'rb') as handle:
-        library = pickle.load(handle)
+
 
 indexer = IndexationGenerator(dp,library)
 match_results = indexer.correlate()
