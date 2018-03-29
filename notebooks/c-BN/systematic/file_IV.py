@@ -6,18 +6,12 @@ from pyxem.utils.plot import generate_marker_inputs_from_peaks
 from pyxem.utils.sim_utils import peaks_from_best_template
 import hyperspy.api as hs
 import pickle
+from pyxem.utils.orientation_utils import *
 
 def build_structure_lib(structure,rot_list):
     struc_lib = dict()
     struc_lib["A"] = (structure,rot_list)
     return struc_lib    
-
-def build_linear_grid_in_euler(alpha_min,alpha_max,beta_min,beta_max,gamma_min,gamma_max,resolution):
-    a = np.arange(alpha_min,alpha_max,step=resolution)
-    b = np.arange(beta_min,beta_max,step=resolution)
-    c = np.arange(gamma_min,gamma_max,step=resolution)
-    from itertools import product
-    return list(product(a,b,c))
 
 def get_WZL_axis(angle):
     phase = "A"
